@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nay-Gd-gWm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="M7l-cd-Fh2">
+            <objects>
+                <navigationController id="nay-Gd-gWm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="401-cx-SMs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nmT-l0-oa9" kind="relationship" relationship="rootViewController" id="CYa-cf-bVo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hne-7H-eu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-925.5" y="430"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="dyp-HG-o5C">
+            <objects>
+                <viewController id="nmT-l0-oa9" customClass="cartooonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rrQ-8Y-7gC"/>
+                        <viewControllerLayoutGuide type="bottom" id="TUm-rd-0GX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pJ5-4Q-1kd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-4J-fMh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.7559542357016158" green="0.73223328139441124" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="雪花动画"/>
+                                <connections>
+                                    <action selector="button:" destination="nmT-l0-oa9" eventType="touchUpInside" id="5fo-Pl-mq7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TUm-rd-0GX" firstAttribute="top" secondItem="8FH-4J-fMh" secondAttribute="bottom" constant="365" id="Foz-Dl-qnO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8FH-4J-fMh" secondAttribute="trailing" constant="40" id="KMa-k1-Pca"/>
+                            <constraint firstItem="8FH-4J-fMh" firstAttribute="leading" secondItem="pJ5-4Q-1kd" secondAttribute="leadingMargin" constant="40" id="N9C-qZ-fiG"/>
+                            <constraint firstItem="8FH-4J-fMh" firstAttribute="top" secondItem="rrQ-8Y-7gC" secondAttribute="bottom" constant="83" id="RRi-Ea-7wt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8FH-4J-fMh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Foz-Dl-qnO"/>
+                                <exclude reference="KMa-k1-Pca"/>
+                                <exclude reference="N9C-qZ-fiG"/>
+                                <exclude reference="RRi-Ea-7wt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8FH-4J-fMh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Foz-Dl-qnO"/>
+                                <include reference="KMa-k1-Pca"/>
+                                <include reference="N9C-qZ-fiG"/>
+                                <include reference="RRi-Ea-7wt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="FcJ-ng-OEB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYY-ep-vSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-909" y="415"/>
+        </scene>
+    </scenes>
+</document>
