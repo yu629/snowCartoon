@@ -419,14 +419,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 6538FF4NRQ;
 				INFOPLIST_FILE = cartoon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zdy.cartoon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b87160f7-cea5-4739-9724-c9000c2f8a83";
-				PROVISIONING_PROFILE_SPECIFIER = CartoonPro;
+				PROVISIONING_PROFILE = "ffa81b92-e718-4ed8-a99a-8f045f38c0ca";
+				PROVISIONING_PROFILE_SPECIFIER = CarnoonProPro;
 			};
 			name = Debug;
 		};

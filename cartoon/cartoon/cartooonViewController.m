@@ -23,7 +23,7 @@
     self.pic = [UIImage imageNamed:@"5ff5803cd46445cbdd2821aed2eb4007"];
     self.view.backgroundColor = [UIColor colorWithRed:0.292 green:0.513 blue:1.000 alpha:1.000];
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor yellowColor];
     
     
 }
